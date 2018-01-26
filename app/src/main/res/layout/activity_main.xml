@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="inc.iris.demoibarts.MainActivity">
+
+
+    <Button
+        android:id="@+id/grid_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimaryTrans"
+        android:ems="9"
+        android:onClick="gridExample"
+        android:padding="8dp"
+        android:text="Grid View"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/gesture_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryTrans"
+        android:ems="9"
+        android:onClick="gesture"
+        android:padding="8dp"
+        android:text="Gesture"
+        app:layout_constraintEnd_toEndOf="@+id/grid_bt"
+        app:layout_constraintStart_toStartOf="@+id/grid_bt"
+        app:layout_constraintTop_toBottomOf="@+id/grid_bt" />
+
+    <Button
+        android:id="@+id/frag_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryTrans"
+        android:ems="9"
+        android:onClick="memeGenerator"
+        android:padding="8dp"
+        android:text="Meme Generator"
+        app:layout_constraintStart_toStartOf="@+id/gesture_bt"
+        app:layout_constraintTop_toBottomOf="@+id/gesture_bt" />
+
+    <Button
+        android:id="@+id/animation_bt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryTrans"
+        android:ems="9"
+        android:onClick="animation"
+        android:padding="8dp"
+        android:text="Animation"
+        app:layout_constraintEnd_toEndOf="@+id/frag_bt"
+        app:layout_constraintStart_toStartOf="@+id/frag_bt"
+        app:layout_constraintTop_toBottomOf="@+id/frag_bt" />
+
+    <Button
+        android:id="@+id/broadcast_bt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryTrans"
+        android:ems="9"
+        android:onClick="broadcast"
+        android:padding="8dp"
+        android:text="Broadcast"
+        app:layout_constraintEnd_toEndOf="@+id/animation_bt"
+        app:layout_constraintStart_toStartOf="@+id/animation_bt"
+        app:layout_constraintTop_toBottomOf="@+id/animation_bt" />
+
+    <Button
+        android:id="@+id/handler_bt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryTrans"
+        android:ems="9"
+        android:onClick="handler"
+        android:padding="8dp"
+        android:text="Handler"
+        app:layout_constraintEnd_toEndOf="@+id/broadcast_bt"
+        app:layout_constraintStart_toStartOf="@+id/broadcast_bt"
+        app:layout_constraintTop_toBottomOf="@+id/broadcast_bt" />
+
+    <Button
+        android:id="@+id/service_bt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryTrans"
+        android:ems="9"
+        android:onClick="service"
+        android:padding="8dp"
+        android:text="Service"
+        app:layout_constraintEnd_toEndOf="@+id/handler_bt"
+        app:layout_constraintStart_toStartOf="@+id/handler_bt"
+        app:layout_constraintTop_toBottomOf="@+id/handler_bt" />
+
+    <Button
+        android:id="@+id/list_bt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryTrans"
+        android:ems="9"
+        android:onClick="getEmpList"
+        android:padding="8dp"
+        android:text="Emp List"
+        app:layout_constraintEnd_toEndOf="@+id/service_bt"
+        app:layout_constraintStart_toStartOf="@+id/service_bt"
+        app:layout_constraintTop_toBottomOf="@+id/service_bt" />
+</android.support.constraint.ConstraintLayout>
