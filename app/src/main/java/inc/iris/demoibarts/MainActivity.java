@@ -48,4 +48,13 @@ public class MainActivity extends AppCompatActivity {
     public void getEmpList(View view) {
         startActivity(new Intent(this, EmployeeList.class));
     }
+
+    public void getNotification(View view) {
+        startActivity(new Intent(this, NotificationScreen.class));
+    }
+
+    public void invertImage(View view) {
+        startActivity(new Intent(this, InvertImage.class));
+    }
+
 }

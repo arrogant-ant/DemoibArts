@@ -17,4 +17,15 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <!-- cardview theme -->
+    <style name="CustomCardView" parent="CardView.Light">
+        <item name="android:radius">12dp</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="android:translationZ">12dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+<style name="CustomCardView.Square">
+    <item name="android:layout_height">128dp</item>
+    <item name="android:layout_width">128dp</item>
+</style>
 </resources>
